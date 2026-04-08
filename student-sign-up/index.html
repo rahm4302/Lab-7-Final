@@ -404,7 +404,15 @@ ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block
 <meta name="generator" content="WordPress 6.9.4" />
 <link rel="canonical" href="/Lab-7-Final/student-sign-up/" />
 <link rel='shortlink' href='/Lab-7-Final/?p=12' />
-		<style id="wp-custom-css">
+<style id="ur-dynamic-colors">:root {
+	--ur-primary-color: #475bb2;
+	--ur-primary-dark: #4052a0;
+	--ur-primary-light: #ffffff;
+	--ur-button-text-normal-color: #FFFFFF;
+	--ur-button-text-hover-color: #FFFFFF;
+	--ur-button-background-normal-color: #475bb2;
+	--ur-button-background-hover-color: #38488e;
+}</style>		<style id="wp-custom-css">
 			:root {
   --primary: #3b82f6;
   --primary-dark: #2563eb;
@@ -725,9 +733,15 @@ label {
   color: var(--primary-dark);
   border-left-color: var(--primary);
 }		</style>
-		</head>
+		<link rel='stylesheet' id='sweetalert2-css' href='/Lab-7-Final/wp-content/plugins/user-registration/assets/css/sweetalert2/sweetalert2.min.css?ver=10.16.7' media='all' />
+<link rel='stylesheet' id='user-registration-general-css' href='/Lab-7-Final/wp-content/plugins/user-registration/assets/css/user-registration.css?ver=5.1.5' media='all' />
+<link rel='stylesheet' id='ltr-support-css' href='/Lab-7-Final/wp-content/plugins/user-registration/assets/css/ltr_only_support.css?ver=5.1.5' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='/Lab-7-Final/wp-includes/css/dashicons.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='ur-frontend-small-screen-css' href='/Lab-7-Final/wp-content/plugins/user-registration/assets/css/user-registration-smallscreen.css?ver=5.1.5' media='all' />
 
-<body class="wp-singular page-template-default page page-id-12 wp-embed-responsive wp-theme-storefront wp-child-theme-storefront_child no-wc-breadcrumb storefront-align-wide right-sidebar">
+</head>
+
+<body class="wp-singular page-template-default page page-id-12 wp-embed-responsive wp-theme-storefront wp-child-theme-storefront_child user-registration-page ur-settings-sidebar-show no-wc-breadcrumb storefront-align-wide right-sidebar">
 
 
 
@@ -742,13 +756,11 @@ label {
 		</div><div class="storefront-primary-navigation"><div class="col-full">		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Navigation">
 		<button id="site-navigation-menu-toggle" class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span>Menu</span></button>
 			<div class="menu"><ul>
-<li ><a href="/Lab-7-Final/">Home</a></li><li class="page_item page-item-5"><a href="/Lab-7-Final/home/">Home</a></li>
-<li class="page_item page-item-10"><a href="/Lab-7-Final/job-list/">Job List</a></li>
+<li ><a href="/Lab-7-Final/">Home</a></li><li class="page_item page-item-10"><a href="/Lab-7-Final/job-list/">Job List</a></li>
 <li class="page_item page-item-12 current_page_item"><a href="/Lab-7-Final/student-sign-up/" aria-current="page">Student Sign Up</a></li>
 </ul></div>
 <div class="menu"><ul>
-<li ><a href="/Lab-7-Final/">Home</a></li><li class="page_item page-item-5"><a href="/Lab-7-Final/home/">Home</a></li>
-<li class="page_item page-item-10"><a href="/Lab-7-Final/job-list/">Job List</a></li>
+<li ><a href="/Lab-7-Final/">Home</a></li><li class="page_item page-item-10"><a href="/Lab-7-Final/job-list/">Job List</a></li>
 <li class="page_item page-item-12 current_page_item"><a href="/Lab-7-Final/student-sign-up/" aria-current="page">Student Sign Up</a></li>
 </ul></div>
 		</nav><!-- #site-navigation -->
@@ -768,7 +780,44 @@ label {
 			<header class="entry-header">
 			<h1 class="entry-title">Student Sign Up</h1>		</header><!-- .entry-header -->
 				<div class="entry-content">
-								</div><!-- .entry-content -->
+				<div class='user-registration ur-frontend-form   ' id='user-registration-form-17'>
+								<form method='post' class='register' data-form-id="17"
+				data-enable-strength-password="" data-minimum-password-strength="3"
+															 data-captcha-enabled="">
+
+				<div class="ur-form-row" data-row-id="0">							<div class="ur-form-grid ur-grid-1"
+								style="width:99%">
+																<div  data-field-id="user_login" class="ur-field-item field-user_login " data-ref-id="user_login" data-field-pattern-enabled="0" data-field-pattern-value=" " data-field-pattern-message=" ">
+										<div class="form-row validate-required" id="user_login_field" data-priority="" ><label for="user_login" class="ur-label">Username <abbr class="required" title="required">*</abbr></label> <span class="input-wrapper"> <input  data-rules="" data-id="user_login" type="text" class="input-text   input-text ur-frontend-field  " name="user_login" id="user_login" placeholder=""  value="" required="required" data-label="Username" data-username-character="1"/> </span> </div>									</div>
+																		<div  data-field-id="user_email" class="ur-field-item field-user_email " data-ref-id="user_email" data-field-pattern-enabled="0" data-field-pattern-value=" " data-field-pattern-message=" ">
+										<div class="form-row validate-required" id="user_email_field" data-priority="" ><label for="user_email" class="ur-label">User Email <abbr class="required" title="required">*</abbr></label> <span class="input-wrapper"> <input  data-rules="" data-id="user_email" type="email" class="input-text   input-email ur-frontend-field  " name="user_email" id="user_email" placeholder=""  value="" required="required" data-label="User Email" /> </span> </div>									</div>
+																		<div  data-field-id="user_pass" class="ur-field-item field-user_pass " data-ref-id="user_pass" data-field-pattern-enabled="0" data-field-pattern-value=" " data-field-pattern-message=" ">
+										<div class="form-row validate-required hide_show_password" id="user_pass_field" data-priority=""><label for="user_pass" class="ur-label">User Password <abbr class="required" title="required">*</abbr></label> <span class="input-wrapper"> <span class="password-input-group input-form-field-icons"><input data-rules="" data-id="user_pass" type="password" class="input-text  input-password ur-frontend-field  " name="user_pass" id="user_pass" placeholder=""  value="" required="required" data-label="User Password" /></span> </span> </div>									</div>
+																		<div  data-field-id="user_confirm_password" class="ur-field-item field-user_confirm_password " data-ref-id="user_confirm_password" data-field-pattern-enabled="0" data-field-pattern-value=" " data-field-pattern-message=" ">
+										<div class="form-row validate-required hide_show_password" id="user_confirm_password_field" data-priority=""><label for="user_confirm_password" class="ur-label">Confirm Password <abbr class="required" title="required">*</abbr></label> <span class="input-wrapper"> <span class="password-input-group input-form-field-icons"><input data-rules="" data-id="user_confirm_password" type="password" class="input-text  input-password ur-frontend-field  " name="user_confirm_password" id="user_confirm_password" placeholder=""  value="" required="required" data-label="Confirm Password" /></span> </span> </div>									</div>
+																		<div  data-field-id="textarea_1775621346" class="ur-field-item field-textarea " data-ref-id="textarea_1775621346" data-field-pattern-enabled="0" data-field-pattern-value=" " data-field-pattern-message=" ">
+										<div class="form-row " id="textarea_1775621346_field" data-priority="" ><label for="textarea_1775621346" class="ur-label">Why I would be good for odd jobs</label><textarea style="margin-bottom:0px;" data-rules="" data-id="textarea_1775621346" name="textarea_1775621346" class="input-text ur-frontend-field  " id="textarea_1775621346" placeholder=""  rows="2" cols="5"data-label="Why I would be good for odd jobs"></textarea><div style="text-align: right; font-size:14px; color:#737373; margin-top:0px;"> <div class="ur-input-count" data-count-type="characters" style="display: inline-block; margin-right: 1px;">0</div>&nbsp;<div style="display: inline-block;"> characters</div></div></div>									</div>
+																</div>
+													</div>
+																		<div class="ur-button-container " >
+														<button type="submit" class="btn button ur-submit-button submit"  conditional_rules="&quot;&quot;">
+								<span></span>
+								Submit							</button>
+																				</div>
+						
+				<div style="clear:both"></div>
+								<input type="hidden" name="ur-registration-language" value="en-CA"/>
+				<input type="hidden" name="ur-user-form-id" value="17"/>
+				<input type="hidden" name="ur-redirect-url" value=""/>
+				<input type="hidden" id="ur_frontend_form_nonce" name="ur_frontend_form_nonce" value="3cf4d7b136" />
+				
+			</form>
+			
+		<div style="clear:both"></div>
+	</div>
+
+
+					</div><!-- .entry-content -->
 		</article><!-- #post-## -->
 
 		</main><!-- #main -->
@@ -776,7 +825,8 @@ label {
 
 
 <div id="secondary" class="widget-area" role="complementary">
-	<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="/Lab-7-Final/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div><div id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/hello-world/">Hello world!</a></li>
+	<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="/Lab-7-Final/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div><div id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/professional-phone-charger-watcher/">Professional Phone Charger Watcher</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/hello-world/">Hello world!</a></li>
 </ul></div></div></div><div id="block-4" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Comments</h2><ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://en-ca.wordpress.org/">A WordPress Commenter</a> on <a class="wp-block-latest-comments__comment-link" href="/Lab-7-Final/hello-world/#comment-1">Hello world!</a></footer></article></li></ol></div></div></div><div id="block-5" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Archives</h2><ul class="wp-block-archives-list wp-block-archives">	<li><a href='/Lab-7-Final/2026/04/'>April 2026</a></li>
 </ul></div></div></div><div id="block-6" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Categories</h2><ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-1"><a href="/Lab-7-Final/category/uncategorized/">Uncategorized</a>
 </li>
@@ -804,6 +854,18 @@ label {
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/storefront_child/*","/wp-content/themes/storefront/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 <script src="/Lab-7-Final/wp-content/themes/storefront/assets/js/navigation.min.js?ver=4.6.2" id="storefront-navigation-js"></script>
+<script src="/Lab-7-Final/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="/Lab-7-Final/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="/Lab-7-Final/wp-content/plugins/user-registration/assets/js/frontend/jquery.validate.min.js?ver=1.20.0" id="ur-jquery-validate-js"></script>
+<script src="/Lab-7-Final/wp-content/plugins/user-registration/assets/js/inputmask/jquery.inputmask.bundle.min.js?ver=4.0.0-beta.58" id="ur-inputmask-js"></script>
+<script id="user-registration-js-extra">
+var ur_frontend_params_with_form_id = {"custom_password_params":""};
+var user_registration_params = {"ajax_url":"/Lab-7-Final/wp-admin/admin-ajax.php","user_registration_form_data_save":"95c59dbd9c","user_registration_update_state_field":"e762514a07","user_registration_profile_details_save":"0b61417ea6","user_registration_profile_picture_upload_nonce":"1827249b9b","user_registration_profile_picture_remove_nonce":"eec4d93d0a","form_required_fields":["user_email","user_pass"],"login_option":"","recaptcha_type":"","user_registration_profile_picture_uploading":"Uploading...","user_registration_profile_picture_removing":"Removing...","ajax_submission_on_edit_profile":"","message_required_fields":"This field is required.","message_email_fields":"Please enter a valid email address.","message_url_fields":"Please enter a valid URL.","message_number_fields":"Please enter a valid number.","message_confirm_password_fields":"Password and confirm password not matched.","message_min_words_fields":"Please enter at least %qty% words.","message_validate_phone_number":"Please enter a valid phone number.","message_username_character_fields":"Please enter a valid username.","message_confirm_email_fields":"Email and confirm email not matched.","message_confirm_number_field_max":"Please enter a value less than or equal to %qty%.","message_confirm_number_field_min":"Please enter a value greater than or equal to %qty%.","message_confirm_number_field_step":"Please enter a multiple of %qty%.","message_min_length_fields":"Please enter at least %qty% characters.","message_max_length_fields":"Please enter no more than %qty% characters.","ursL10n":{"user_successfully_saved":"User successfully registered.","user_under_approval":"User registered. Wait until admin approves your registration.","user_email_pending":"User registered. Verify your email by clicking on the link sent to your email.","captcha_error":"Captcha code error, please try again.","hide_password_title":"Hide Password","show_password_title":"Show Password","i18n_total_field_value_zero":"Total field value should be greater than zero.","i18n_discount_total_zero":"Discounted amount cannot be less than or equals to Zero. Please adjust your coupon code.","password_strength_error":"Password strength is not strong enough"},"is_payment_compatible":"1","ur_hold_data_before_redirection":"","ajax_form_submit_error":"Something went wrong while submitting the form. Please try again. If the issue continues, contact the site administrator for help","logout_popup_text":"Are you sure you want to logout?","logout_popup_cancel_text":"Cancel","user_registration_checkbox_validation_message":"Please select no more than {0} options.","user_registration_membership_renew_plan_button_text":"Change","network_error":"Network error","tax_calculation_method":"","regions_list":[],"currency_symbol":"$","currency_pos":"left","is_tax_calculation_activated":""};
+//# sourceURL=user-registration-js-extra
+</script>
+<script src="/Lab-7-Final/wp-content/plugins/user-registration/assets/js/frontend/user-registration.min.js?ver=5.1.5" id="user-registration-js"></script>
+<script src="/Lab-7-Final/wp-content/plugins/user-registration/assets/js/frontend/user-registration-form-validator.min.js?ver=5.1.5" id="ur-form-validator-js"></script>
+<script src="/Lab-7-Final/wp-content/plugins/user-registration/assets/js/frontend/ur-common.min.js?ver=5.1.5" id="ur-common-js"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/Lab-7-Final/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
 </script>
