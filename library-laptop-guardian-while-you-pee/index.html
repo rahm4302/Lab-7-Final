@@ -426,325 +426,117 @@ ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block
 	--ur-button-background-normal-color: #475bb2;
 	--ur-button-background-hover-color: #38488e;
 }</style>		<style id="wp-custom-css">
-			:root {
-  --primary: #3b82f6;
-  --primary-dark: #2563eb;
-  --secondary: #10b981;
-  --accent: #f59e0b;
-  --dark: #1e293b;
-  --light: #f8fafc;
-  --gray: #64748b;
-  --border: #e2e8f0;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --radius: 1rem;
-  --radius-sm: 0.5rem;
+			body {
+    background: #0a0a0a !important;
+    color: #e0e0e0 !important;
+    font-family: 'Inter', 'Poppins', 'Roboto Condensed', sans-serif !important;
+    font-weight: 400 !important;
 }
 
-body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  color: var(--dark);
-  background: linear-gradient(135deg, #fef9e8 0%, #f0f9ff 100%);
-  line-height: 1.5;
+.post, .job-listing, .type-post {
+    background: #111 !important;
+    border-left: 6px solid #d4af37 !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #d4af37 !important;
+    border-radius: 0 !important;
+    box-shadow: 8px 8px 0 rgba(212, 175, 55, 0.2) !important;
+    padding: 1.8rem !important;
+    margin-bottom: 2rem !important;
+    transition: all 0.2s ease !important;
+}
+.post:hover {
+    transform: translate(4px, 4px) !important;
+    box-shadow: 2px 2px 0 #d4af37 !important;
+    border-left-width: 10px !important;
 }
 
-.jobs-grid,
-.wp-block-post-template {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+.entry-content p strong:first-of-type,
+.entry-content strong:contains("Rate") {
+    background: #d4af37 !important;
+    color: #000 !important;
+    padding: 0.3rem 1rem !important;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 900 !important;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif !important;
+    display: inline-block !important;
+    border: none !important;
 }
 
-.job-card,
-.wp-block-post {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(2px);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.hire-button, .wp-block-button__link, button, .button {
+    background: #b22222 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif !important;
+    letter-spacing: 2px !important;
+    transition: 0.1s linear !important;
+    box-shadow: 4px 4px 0 #8b0000 !important;
+    font-size: 1.1rem !important;
+}
+.hire-button:hover, .wp-block-button__link:hover, button:hover {
+    background: #8b0000 !important;
+    transform: translate(2px, 2px) !important;
+    box-shadow: 2px 2px 0 #5a0000 !important;
+    cursor: pointer !important;
 }
 
-.job-card:hover,
-.wp-block-post:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--primary);
+.widget {
+    background: #0f0f0f !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 0 !important;
+    padding: 1rem !important;
+    margin-bottom: 2rem !important;
+}
+.widget-title {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    border-bottom: 3px solid #b22222 !important;
+    padding-bottom: 0.5rem !important;
+    text-transform: uppercase !important;
+    color: #d4af37 !important;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif !important;
+    letter-spacing: 1px !important;
 }
 
-.job-title,
-.entry-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
+.testimonial, .wp-block-pullquote {
+    background: #0a0a0a !important;
+    border-left: 6px solid #b22222 !important;
+    border-right: none !important;
+    padding: 1.5rem !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    color: #ccc !important;
+    font-size: 1.1rem !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    font-family: 'Inter', 'Poppins', sans-serif !important;
 }
 
-.job-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1rem 0;
-  font-size: 0.875rem;
-  color: var(--gray);
+h1, h2, h3, .entry-title {
+    font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #d4af37 !important;
+    border-left: 6px solid #b22222 !important;
+    padding-left: 1rem !important;
+    font-weight: 700 !important;
 }
 
-.job-price {
-  background: linear-gradient(135deg, var(--secondary), #059669);
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  color: white;
-  font-weight: 600;
-  font-size: 0.875rem;
-  display: inline-block;
+a {
+    color: #d4af37 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
 }
-
-.badge-student,
-.badge-homeowner {
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.badge-student {
-  background: #dbeafe;
-  color: var(--primary-dark);
-}
-
-.badge-homeowner {
-  background: #fed7aa;
-  color: #b45309;
-}
-
-.job-description,
-.entry-content p {
-  color: var(--gray);
-  margin: 1rem 0;
-  line-height: 1.6;
-}
-
-.button,
-.wp-block-button__link,
-.btn,
-.submit-job,
-.job-apply-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  font-size: 0.875rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.button:hover,
-.wp-block-button__link:hover,
-.btn:hover,
-.submit-job:hover,
-.job-apply-btn:hover {
-  transform: scale(1.02);
-  box-shadow: var(--shadow);
-  filter: brightness(1.05);
-}
-
-.button-secondary {
-  background: linear-gradient(135deg, var(--accent), #ea580c);
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 1rem;
-  transition: all 0.2s ease;
-  background: white;
-}
-
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-}
-
-label {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  display: block;
-  color: var(--dark);
-}
-
-.hero,
-.page-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, rgba(59,130,246,0.05), rgba(16,185,129,0.05));
-  border-radius: var(--radius);
-  margin-bottom: 2rem;
-}
-
-.hero h1,
-.page-header h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.125rem;
-  color: var(--gray);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.site-header {
-  background: white;
-  border-bottom: 1px solid var(--border);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.site-footer {
-  background: var(--dark);
-  color: white;
-  padding: 2rem 0;
-  margin-top: 4rem;
-  border-radius: var(--radius) var(--radius) 0 0;
-}
-
-.container,
-.wp-block-group__inner-container,
-.entry-content {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.filter-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-  padding: 1rem;
-  border-radius: var(--radius);
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.search-input {
-  flex: 1;
-  min-width: 200px;
-}
-
-.category-filter {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.category-tag {
-  background: var(--light);
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  cursor: pointer;
-  transition: all 0.2s;
-  font-size: 0.875rem;
-}
-
-.category-tag.active,
-.category-tag:hover {
-  background: var(--primary);
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .jobs-grid,
-  .wp-block-post-template {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .hero h1 {
-    font-size: 1.875rem;
-  }
-
-  .button,
-  .wp-block-button__link {
-    padding: 0.5rem 1rem;
-  }
-
-  .job-title {
-    font-size: 1.25rem;
-  }
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 3rem 0;
-}
-
-.pagination a,
-.pagination span {
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
-  background: white;
-  color: var(--dark);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.pagination .current,
-.pagination a:hover {
-  background: var(--primary);
-  color: white;
-}
-
-.alert-success,
-.alert-info {
-  padding: 1rem;
-  border-radius: var(--radius-sm);
-  margin: 1rem 0;
-  background: #d1fae5;
-  color: #065f46;
-  border-left: 4px solid var(--secondary);
-}
-
-.alert-info {
-  background: #dbeafe;
-  color: var(--primary-dark);
-  border-left-color: var(--primary);
+a:hover {
+    color: #b22222 !important;
+    text-decoration: underline !important;
 }		</style>
 		</head>
 
@@ -807,7 +599,7 @@ label {
 			
 					</aside>
 
-		<nav id="post-navigation" class="navigation post-navigation" role="navigation" aria-label="Post Navigation"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links"><div class="nav-previous"><a href="/Lab-7-Final/professional-canvas-grade-refresher/" rel="prev"><span class="screen-reader-text">Previous post: </span>Professional Canvas Grade Refresher</a></div></div></nav>
+		<nav id="post-navigation" class="navigation post-navigation" role="navigation" aria-label="Post Navigation"><h2 class="screen-reader-text">Post navigation</h2><div class="nav-links"><div class="nav-previous"><a href="/Lab-7-Final/professional-canvas-grade-refresher/" rel="prev"><span class="screen-reader-text">Previous post: </span>Professional Canvas Grade Refresher</a></div><div class="nav-next"><a href="/Lab-7-Final/professional-note-taker-i-will-sell-you-notes-i-didnt-take/" rel="next"><span class="screen-reader-text">Next post: </span>Professional Note Taker (I will sell you notes I didn&#8217;t take)</a></div></div></nav>
 </article><!-- #post-## -->
 
 		</main><!-- #main -->
@@ -815,7 +607,8 @@ label {
 
 
 <div id="secondary" class="widget-area" role="complementary">
-	<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="/Lab-7-Final/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div><div id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/library-laptop-guardian-while-you-pee/">Library Laptop Guardian (While You Pee)</a></li>
+	<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="/Lab-7-Final/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"    ><label class="wp-block-search__label" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper" ><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div><div id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/professional-note-taker-i-will-sell-you-notes-i-didnt-take/">Professional Note Taker (I will sell you notes I didn&#8217;t take)</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/library-laptop-guardian-while-you-pee/">Library Laptop Guardian (While You Pee)</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/professional-canvas-grade-refresher/">Professional Canvas Grade Refresher</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/professional-phone-charger-watcher/">Professional Phone Charger Watcher</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="/Lab-7-Final/hello-world/">Certified Fridge Light Verifier</a></li>
