@@ -17,6 +17,11 @@
     </url>
     <url>
         <loc>
+            http://localhost:8000/library-laptop-guardian-while-you-pee/
+        </loc>
+    </url>
+    <url>
+        <loc>
             http://localhost:8000/
         </loc>
     </url>
